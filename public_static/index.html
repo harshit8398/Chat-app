@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chatbox</title>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="jquery.js"></script>
+    <script src="client.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+    <style>
+        #chat-container {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<h1 align="center">Chat App</h1>
+<div class="container">
+    <br>
+    <br>
+    <div class="row">
+    <div class="col-md-4">
+      <div id="login-container">
+        <div class="input-group">
+          <input id="username" type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+        </div>
+      <br>
+          <button class="btn btn-dark" id="login">Login</button>
+      </div>
+    </div>
+</div>
+</div>
+
+ <div id="chat-container">
+     <div class="col-md-6 offset-md-3 col-sm-12">
+         <h3> Chats </h3>
+         <br>
+            <ul id="msglist">
+            </ul>
+         <br>
+         <div class="input-group">
+             <input id ="newmsg" type="text" class="form-control" placeholder="Your message" aria-label="Username" aria-describedby="basic-addon1">
+          &nbsp;<button id="sendmsg" class="btn btn-danger">Send</button>
+         </div>
+      </div>
+ </div>
+</body>
+</html>
